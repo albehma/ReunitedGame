@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gridview"
+    android:numColumns="3"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="30dp"
+    android:gravity="center"
+    android:horizontalSpacing="20dip"
+    android:verticalSpacing="80dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp">
+</GridView>
+    <!--Questa è una gridview: ovvero una schermata a griglia composta da 9 caselle dentro le quali si possono mettere
+        oggetti di vario tipo. Nel nostro caso verranno inseriti oggetti di tipo stringa che corrispondono ai caratteri
+        x ed o, in linea con i simboli classici del tris-->

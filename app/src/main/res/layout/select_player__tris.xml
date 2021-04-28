@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Pagina di selezione dei simboli per i 2 giocatori-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_player" >
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <!--Un semplice testo per indicare che il radioGroup iniziale è riferito al player1-->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/p1"
+            android:textSize="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/p1"
+            android:id="@+id/text1"/>
+
+        <!--RadioGroup: raggruppa 2 o più pulsanti al fine di effettuare una scelta tra questi-->
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/RadioGroup1"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="240dp">
+
+            <!--RadioButton: tipo di bottone concentrico
+                Ce ne sono 2: uno per la scelta della x e uno per la scelta della o-->
+            <RadioButton
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:checked="true"
+                android:text="@string/o"
+                android:textColor="@color/p1"
+                android:textSize="50dp" />
+
+            <RadioButton
+                android:id="@+id/cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/x"
+                android:textColor="@color/p1"
+                android:textSize="50dp" />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <!--Stessa cosa come sopra: qui viene specificato che deve essere il secondo giocatore a scegliere
+            il simbolo nel relativo RadoiGroup-->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/p2"
+            android:textSize="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/p2"
+            android:id="@+id/t1"/>
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/radioGroup2"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="240dp">
+
+            <RadioButton
+                android:id="@+id/zero2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:checked="true"
+                android:text="@string/o"
+                android:textColor="@color/p2"
+                android:textSize="50dp" />
+
+            <RadioButton
+                android:id="@+id/cross2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/x"
+                android:textColor="@color/p2"
+                android:textSize="50dp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+
+    <!--Infine viene definito il simbolo per andare avanti sulla gridView e poter iniziare il gioco-->
+    <Button
+        android:id="@+id/play4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/go"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="150dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+</LinearLayout>

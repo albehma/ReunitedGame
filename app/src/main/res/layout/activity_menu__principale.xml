@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context="aggiomarchettimautone.giochiriuniti.Menu_Principale">
+
+    <Button
+        android:id="@+id/tris"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/memory"
+        app:layout_constraintEnd_toStartOf="@+id/labirinto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/labirinto"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/differenze"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tris"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/memory"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/impiccato"
+        app:layout_constraintEnd_toStartOf="@+id/differenze"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tris" />
+
+    <Button
+        android:id="@+id/impiccato"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/puzzle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memory" />
+
+    <Button
+        android:id="@+id/differenze"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/puzzle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/memory"
+        app:layout_constraintTop_toBottomOf="@+id/labirinto" />
+
+    <Button
+        android:id="@+id/puzzle"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/impiccato"
+        app:layout_constraintTop_toBottomOf="@+id/differenze" />
+</android.support.constraint.ConstraintLayout>

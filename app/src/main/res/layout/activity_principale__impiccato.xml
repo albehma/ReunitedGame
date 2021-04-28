@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".Principale_Impiccato"
+    >
+
+    <!--Testo per visualizzare i trattini dove verrà inserita la parola-->
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:typeface="monospace"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/word"/>
+
+    <!--EditText: serve a scrivere la lettera nella casella apposita
+    Differenza col button di sotto: quello serve a confermare l'inserimento, questo a scrovere la lettera-->
+    <EditText
+        android:id="@+id/new_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/word"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/inserire"
+        android:inputType="textCapWords"
+        android:maxLength="1" />
+
+    <!--Tasto per inserire la nuova lettera di prova-->
+    <Button
+        android:id="@+id/new_letter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_letter"
+        android:layout_centerHorizontal="true"
+        android:onClick="new_guess"
+        android:text="@string/indovina" />
+
+    <!--Stringa per visulizzare punteggio-->
+    <TextView
+        android:id="@+id/score_help_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:paddingTop="20sp"
+        android:text="@string/punteggio"
+        android:textSize="15sp" />
+
+    <!--Testo per inserire nuova lettera-->
+    <TextView
+        android:paddingTop="20sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/score"
+        android:layout_below="@id/new_letter_button"
+        android:layout_toRightOf="@id/score_help_text"/>
+
+    <!--tasto per cancellare tutta la parola e farne una nuova-->
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:onClick="reset"
+        android:text="@string/reset" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml di supporto alla griglia: servirà per poter scrivere dentro essa le x e le o-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gamecol"
+    android:id="@+id/txt"
+    android:gravity="center">
+</TextView>

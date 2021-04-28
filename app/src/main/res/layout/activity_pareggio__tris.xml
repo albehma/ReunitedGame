@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pareggio_pic"
+    android:orientation="vertical">
+
+    <!--Bottone per tornare alla schermata iniziale-->
+    <Button
+        android:id="@+id/goBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/goBack" />
+
+    <!--Semplice testo che annuncia il pareggio-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="@string/peccato"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <!--Immagine di pareggio-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/pareggio" />
+
+    <!--Semplice testo che annuncia che nessuno ha vinto-->
+    <TextView
+        android:layout_width="226dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="96dp"
+        android:layout_marginStart="82dp"
+        android:fontFamily="casual"
+        android:text="@string/no_win"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

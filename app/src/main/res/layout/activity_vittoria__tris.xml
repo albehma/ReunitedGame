@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/winner_pic">
+
+    <!--Testo che annuncia la vittoria-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="@string/cz"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <!--Testo da inserire dentro il bottone per tornare indietro sotto definito-->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/goBack1"
+        android:layout_marginBottom="124dp"
+        android:fontFamily="casual"
+        android:textColor="@color/gamecol"
+        android:textSize="36dp" />
+
+    <!--Testo che segue il nome del player vincitore-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-126dp"
+        android:fontFamily="casual"
+        android:text="@string/wn"
+        android:textColor="@color/black"
+        android:textSize="36sp" />
+
+    <!--Semplice tasto per tornare indietro-->
+    <Button
+        android:id="@+id/goBack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/goBack" />
+
+    <!--Immagine del trofeo in caso di vittoria-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/premio" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lab02"
+    tools:context=".Livello2_Labirinto">
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/man"
+        android:translationX="120px"
+        android:translationY="90px"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            app:layout_constraintEnd_toStartOf="@+id/up"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="446dp" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Up"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Down"
+            app:layout_constraintStart_toEndOf="@+id/up"
+            tools:layout_editor_absoluteY="447dp" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/down"
+            tools:layout_editor_absoluteY="447dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
